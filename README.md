@@ -7,7 +7,7 @@ Two Brain Teasers Solved from [https://parade.com/970343/parade/logic-puzzles/](
 
 Answer: Friday. The “day before tomorrow” is today; “the day before two days after” is really one day after. So if “one day after today is Saturday,” then it must be Friday.
 
-###Steps taken:
+### Steps taken:
 * encoded sequential days of two weeks
 * broke down the three days referred to in the puzzle
     - "the day ... is Saturday" and is (implied one day) "before"
@@ -25,8 +25,7 @@ Answer: 40 socks. If he takes out 38 socks (adding the two biggest amounts, 21 a
 
 Answer: 40 or more socks. If he takes out 38 socks (adding the two biggest amounts, 21 and 17), although it is very unlikely, it is possible they could all be blue and red. To make 100 percent certain that he also has a pair of black socks he must take out a further two socks.
 
-
-###Steps taken:
+### Steps taken:
 * encoded numbers of socks
 * constrained the minimum number of black socks allowed
 * calculated the total number of socks
