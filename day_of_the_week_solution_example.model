@@ -1,0 +1,55 @@
+; Logic Puzzle 5
+; https://parade.com/970343/parade/logic-puzzles/
+; The day before two days after the day before tomorrow is Saturday.
+; What day is it today?
+
+; Official Answer: Friday. The “day before tomorrow” is today; “the day before two days after” is really one day after. So if “one day after today is Saturday,” then it must be Friday.
+
+; Answer derived from model below
+; today would be Friday since today and Friday have a value (- 1)
+; tomorrow would be Saturday
+; day1 would be Saturday, day one: "the day ... is Saturday"
+; day2 would be Sunday, day1 is "(implied one day) before"
+; day3 would be Friday, day1 is "two days after"
+
+sat
+(model 
+  (define-fun today () Int
+    (- 1))
+  (define-fun tomorrow () Int
+    0)
+  (define-fun day1 () Int
+    0)
+  (define-fun day2 () Int
+    1)
+  (define-fun day3 () Int
+    (- 1))
+  (define-fun Sunday1 () Int
+    (- 6))
+  (define-fun Monday1 () Int
+    (- 5))
+  (define-fun Tuesday1 () Int
+    (- 4))
+  (define-fun Wednesday1 () Int
+    (- 3))
+  (define-fun Thursday1 () Int
+    (- 2))
+  (define-fun Friday1 () Int
+    (- 1))
+  (define-fun Saturday1 () Int
+    0)
+  (define-fun Sunday2 () Int
+    1)
+  (define-fun Monday2 () Int
+    2)
+  (define-fun Tuesday2 () Int
+    3)
+  (define-fun Wednesday2 () Int
+    4)
+  (define-fun Thursday2 () Int
+    5)
+  (define-fun Friday2 () Int
+    6)
+  (define-fun Saturday2 () Int
+    7)
+)
