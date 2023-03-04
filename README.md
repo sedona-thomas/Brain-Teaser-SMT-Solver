@@ -15,7 +15,7 @@ Answer: Friday. The “day before tomorrow” is today; “the day before two da
     - "the day before tomorrow"
 * compared the value of today to the different weekdays
 
-
+***reordered example solution in `days_of_the_week_solution_example.model`
 
 ## 4. Logic Puzzle: A man has 53 socks in his drawer: 21 identical blue, 15 identical black and 17 identical red. The lights are out and he is completely in the dark. How many socks must he take out to make 100 percent certain he has at least one pair of black socks?
 
