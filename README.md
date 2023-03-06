@@ -1,7 +1,6 @@
 # Brain-Teaser-SMT-Solver
 
-Two Brain Teasers Solved from [https://parade.com/970343/parade/logic-puzzles/](https://parade.com/970343/parade/logic-puzzles/): 
-
+Brain Teasers come from [https://parade.com/970343/parade/logic-puzzles/](https://parade.com/970343/parade/logic-puzzles/)
 
 ## 5. Logic Puzzle: The day before two days after the day before tomorrow is Saturday. What day is it today?
 
@@ -23,6 +22,9 @@ An example SMT output can be found in the `day_of_the_week_solution_example.mode
 
 When a model is generated, today can be determined by comparing the interger for today to the day of the week encoded by the same integer.
 
+### Further Notes
+
+If this model were extended to another problem, the initial choice of day to work around could require a different start to the two week span or additional weeks added. Since the explicitly referenced day in the problem was a Satuday and there were a total of 5 possible day changes ([day before = 1] + [two days after = 2] + [day before = 1] + [tomorrow = 1] = 5), "today" must a maximum of 5 days before or after Saturday. Therefore, it is safe to encode the Saturday in the problem as the Saturday in the middle of the two week span (the `Saturday1` variable).
 
 ## 4. Logic Puzzle: A man has 53 socks in his drawer: 21 identical blue, 15 identical black and 17 identical red. The lights are out and he is completely in the dark. How many socks must he take out to make 100 percent certain he has at least one pair of black socks?
 
@@ -47,3 +49,7 @@ An example SMT output can be found in the `number_of_socks_solution_example.mode
 ### Interpreting the Output
 
 when a model is generated, a solution can be determined by simply identifying the socksRemoved variable.
+
+### Further Notes
+
+This model could be easily extended to other colors of socks by adding new variables and number of new color of socks chosen constraints then adding that variable to the existing contraint for socksRemoved. 
