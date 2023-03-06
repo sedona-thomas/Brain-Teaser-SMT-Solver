@@ -1,0 +1,23 @@
+; Adapted from Logic Puzzle 4 
+; https://parade.com/970343/parade/logic-puzzles/
+; A man has 53 socks in his drawer: 21 identical blue, 15 identical black, and 17 identical red. 
+; The lights are out and he is completely in the dark. 
+; How many socks can he take out that would make 100 percent certain he has at least one pair of black socks?
+
+; Official Answer: 40 socks. If he takes out 38 socks (adding the two biggest amounts, 21 and 17), although it is very unlikely, it is possible they could all be blue and red. To make 100 percent certain that he also has a pair of black socks he must take out a further two socks.
+
+; Answer derived from model below
+; Check socksRemoved for a valid solution
+
+
+sat
+(model 
+  (define-fun black () Int
+    14)
+  (define-fun red () Int
+    17)
+  (define-fun blue () Int
+    21)
+  (define-fun socksRemoved () Int
+    52)
+)
